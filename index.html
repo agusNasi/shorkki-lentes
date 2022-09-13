@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/favicon (2).png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>SHORRRKY</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+          <div class="main-header__container">
+            <h1 class="main-header__title">SHORKI-LENTES</h1>
+            <span class="icon-menu" id="btn-menu"><i class="fas fa-bars"></i></span>
+            <nav class="main-nav" id="main-nav">
+              <ul class="menu">
+                <li class="menu__item"><a href="" class="menu__link">INICIO</a></li>
+                <li class="menu__item"><a href="" class="menu__link">NOSOTROS</a></li>
+                <li class="menu__item"><a href="" class="menu__link">CARACTERISTICAS</a></li>
+                <li class="menu__item"><a href="" class="menu__link">TIENDA</a></li>
+                <li class="menu__item"><a href="" class="menu__link">CONTACTO</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="main-header__container">
+            <span class="main-header__txt">Ayuda</span>
+            <p class="main-header__txt"><i class="fas fa-phone"></i> Cel 12345678099</p>
+          </div>
+          <div class="main-header__container">
+            <a href="" class="main-header__link"><i class="fas fa-user"></i></a>
+          <div class="cart__add">
+            <img onmouseover="showCart(this)" class="cart" src="./img/cart.png" alt="">
+            <p class="count-product">0</p>
+        </div>
+        <div class="cart-products" id="products-id">
+            <p class="close-btn" onclick="closeBtn()">X</p>
+            <h3>Mi carrito</h3>
+            <div class="card-items">
+            </div>
+            <h2>Total: <strong class="price-total">0</strong> $</h2>
+        </div>
+    </div>
+        </div>
+      </header>
+      <div class="container-slider">
+        <div class="slider" id="slider">
+          <div class="slider__section">
+            <img src="./img/img-lentes1.png" alt="" class="slider__img">
+            <div class="slider__content">
+              <h2 class="slider__title">Women's eyewear</h2>
+              <p class="slider__txt">Cool summer sale 50% off</p>
+              <a href="" class="btn-shop">COMPRAR AHORA</a>
+            </div>
+          </div>
+          <div class="slider__section">
+            <img src="./img/img-lentes2.png" alt="" class="slider__img">
+            <div class="slider__content">
+              <h2 class="slider__title">Women's eyewear</h2>
+              <p class="slider__txt">Cool summer sale 50% off</p>
+              <a href="" class="btn-shop">COMPRAR AHORA</a>
+            </div>
+          </div>
+          <div class="slider__section">
+            <img src="./img/img-lentes3.png" alt="" class="slider__img">
+            <div class="slider__content">
+              <h2 class="slider__title">Men's eyewear</h2>
+              <p class="slider__txt">Cool summer sale 50% off</p>
+              <a href="" class="btn-shop">COMPRAR AHORA</a>
+            </div>
+          </div>
+          <div class="slider__section">
+            <img src="./img/img-lentes4.png" alt="" class="slider__img">
+            <div class="slider__content">
+              <h2 class="slider__title">Men's eyewear</h2>
+              <p class="slider__txt">Cool summer sale 50% off</p>
+              <a href="" class="btn-shop">COMPRAR AHORA</a>
+            </div>
+          </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+      </div>
+      <main class="main">
+        <div class="container">
+          <h2 class="main-title">Nuevos ingresos:</h2>
+          <section class="container-products">
+            <div class="product">
+              <img src="./img/catalogo-lentes1.png" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Farenheit </h3>
+                <span class="product__price">$575.00</span>
+                <i class="product__icon fas fa-cart-plus" data-id="1"></i>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./img/catalogo-lentes2.png" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Opium </h3>
+                <span class="product__price">$575.00</span>
+                <i class="product__icon fas fa-cart-plus" data-id="2"></i>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./img/catalogo-lentes3.png" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Kenneth Cole</h3>
+                <span class="product__price">$575.00</span>
+                <i class="product__icon fas fa-cart-plus" data-id="3"></i>
+              </div>
+            </div>
+            <div class="product">
+              <img src="./img/catalogo-lentes4.png" alt="" class="product__img">
+              <div class="product__description">
+                <h3 class="product__title">Farenheit Oval</h3>
+                <span class="product__price">$325.00</span>
+                <i class="product__icon fas fa-cart-plus" data-id="4"></i>
+              </div>
+            </div>
+            <div class="product">
+                <img src="./img/catalogo-lentes1.png" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">Farenheit</h3>
+                  <span class="product__price">$575.00</span>
+                  <i class="product__icon fas fa-cart-plus" data-id="5"></i>
+                </div>
+              </div>
+              <div class="product">
+                <img src="./img/catalogo-lentes2.png" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">Opium</h3>
+                  <span class="product__price">$575.00</span>
+                  <i class="product__icon fas fa-cart-plus" data-id="6"></i>
+                </div>
+              </div>
+              <div class="product">
+                <img src="./img/catalogo-lentes3.png" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">Kenneth Cole</h3>
+                  <span class="product__price">$575.00</span>
+                  <i class="product__icon fas fa-cart-plus" data-id="7"></i>
+                </div>
+              </div>
+              <div class="product">
+                <img src="./img/catalogo-lentes4.png" alt="" class="product__img">
+                <div class="product__description">
+                  <h3 class="product__title">Farenheit Oval</h3>
+                  <span class="product__price">$325.00</span>
+                  <i class="product__icon fas fa-cart-plus" data-id="8"></i>
+                </div>
+              </div>
+          </section>
+          <section class="container__main-temp">
+            <h2 class="temp__title">SUMMER FLASH SALE</h2>
+            <div class="cont__temporizador">
+              <div class="bloque">
+                <div class="dias" id="dias">00</div>
+                <p>DIAS</p>
+              </div>
+              <div class="bloque">
+                <div class="horas" id="horas">00</div>
+                <p>HORAS</p>
+              </div>
+              <div class="bloque">
+                <div class="minutos" id="minutos">00</div>
+                <p>MINUTOS</p>
+              </div>
+              <div class="bloque">
+                <div class="segundos" id="segundos">00</div>
+                <p>SEGUNDOS</p>
+              </div>
+
+            </div>
+          </section>
+        
+          <section class="container-tips">
+            <div class="tip">
+              <i class="far fa-hand-paper"></i> 
+              <h2 class="tip__title">Satisfacción Garantizada.</h2>
+              <p class="tip__txt">te garantizamos lentes de buena calidad. si no es lo que esperaba, no te preocupes, pueden pedir un reembolso.</p>
+              <a href="" class="btn-shop">SHOP NOW</a>
+            </div>
+            <div class="tip">
+             <i class="fas fa-rocket"></i>
+              <h2 class="tip__title">Envio rapido.</h2>
+              <p class="tip__txt">Llegada entre 3 y 5 dias habiles.</p>
+              <a href="" class="btn-shop">SHOP NOW</a>
+            </div>
+            <div class="tip">
+              <i class="fa-solid fa-sun"></i>
+              <h2 class="tip__title">Proteccion UV.</h2>
+              <p class="tip__txt">Proteje los ojos contra los rayos UV.</p>
+              <a href="" class="btn-shop">SHOP NOW</a>
+            </div>
+          </section>
+
+          <div class="container-editor">
+            <div class="editor__item">
+              <img src="./img/lentes2-editor.png" alt="" class="editor__img">
+              <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+            </div>
+            <div class="editor__item">
+              <img src="./img/lentes1-editor.png" alt="" class="editor__img">
+              <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-box">
+          <div class="box">
+            <div class="box__icon"><i class="fa-solid fa-gift"></i></div>
+            <div class="box__content">
+              <h3 class="box__title">Producto genuino.</h3>
+              <p class="box__txt">los mejores productos originales!</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="box__content">
+              <h3 class="box__title">Producto seguro.</h3>
+              <p class="box__txt">Garantia de 1 año por fallas de fabrica.</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__icon"><i class="fa-solid fa-dollar-sign"></i></div>
+            <div class="box__content">
+              <h3 class="box__title">Reembolso.</h3>
+              <p class="box__txt">si es lo que desea le realizaremos un reembolso!</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box__icon"><i class="fa-solid fa-truck"></i></div>
+            <div class="box__content">
+              <h3 class="box__title">Envio seguro.</h3>
+              <p class="box__txt">Envio seguro y rapido.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer">
+        <div class="footer__section">
+          <h2 class="footer__title">sobre nosotros</h2>
+          <p class="footer__txt">Un negocio familiar que surgio hace 10 años que busca los mejores lentes para sus clientes.</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Locacion </h2>
+          <p class="footer__txt">Cordoba, Argentina</p>
+          <h2 class="footer__title">Contacto</h2>
+          <p class="footer__txt">Cel : +121 098 8907 9987</p>
+          <p class="footer__txt">Email : info@example.com</p>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Links</h2>
+          <a href="#" class="footer__link">Inicio</a>
+          <a href="#" class="footer__link">Sobre nosotros</a>
+          <a href="#" class="footer__link">Error</a>
+          <a href="#" class="footer__link">Tienda</a>
+          <a href="#" class="footer__link">Contacto</a>
+        </div>
+        <div class="footer__section">
+          <h2 class="footer__title">Suscribete a las ofertas</h2>
+          <p class="footer__txt">Al suscribirse a nuestra lista de correo, siempre recibirá nuestras últimas noticias y actualizaciones.</p>
+          <input type="email" class="footer__input" placeholder="Enter your email">
+        </div>
+        <p class="copy">/AN/</p>
+      </footer>
+      <script src="./js/script.js"></script>
+</body>
+</html>
